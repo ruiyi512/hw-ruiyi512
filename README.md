@@ -1,4 +1,10 @@
 # cmsite
+維護成員:41323107、41323142、41323148、41323150
+
+作業網站:https://ruiyi512.github.io/cad2025_team/
+
+作業倉儲:https://github.com/ruiyi512/cad2025_team
+
 
 利用 init_replit 指令取下子模組並安裝所需 Python 模組
 
