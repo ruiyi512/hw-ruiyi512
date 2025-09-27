@@ -2,7 +2,7 @@
         <head>
         <title>cad2025_hw</title>
         <meta charset="utf-8">
-<meta property="head" content="H1">
+<meta property="head" content="H3">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
@@ -142,8 +142,36 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='成員與工作分配.html'>Next</a> >> 成員與工作分配<br /><h1>HomeWork</h1>
-<br />About << <a href='About.html'>Previous</a> <a href='成員與工作分配.html'>Next</a> >> 成員與工作分配</div>
+    <div id="tipue_search_content">Git push << <a href='Git push.html'>Previous</a> <br /><h1>合併項目</h1>
+<h4><span style="background-color: #ffff00;">rebase(合併相關)</span></h4>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">git pull origin main --rebase #將本地尚未推送的 commit 移到遠端更新之後</pre>
+<p>#說明<span>: </span>如果遠端和本地有改到同一個檔案、甚至同一行，就會出現 <strong>衝突<span> (conflict)</span></strong>，<span>Git </span>需要你手動選擇合併內容。與傳統的<span> merge </span>不同，歷史會更乾淨，不會產生額外的<span> merge commit</span>。</p>
+<h4><span style="background-color: #ffff00;">git status(合併相關)</span></h4>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">git status #查看衝突檔案</pre>
+<p></p>
+<h4><span style="background-color: #ffff00;">continue(合併相關)</span></h4>
+<p>git rebase --continue # Git 會嘗試套用下一個<span> commit</span></p>
+<ul>
+<li><strong>正在進行<span> interactive rebase</span></strong>，基底是 8164a7e</li>
+<li><strong>第一個<span> commit (</span></strong><strong>8ff8cac</strong><strong>) </strong><strong>已經套用</strong></li>
+<li><strong>第二個<span> commit (</span></strong><strong>3cf2e6a</strong><strong>) </strong><strong>尚未處理</strong></li>
+<li><strong>工作目錄乾淨</strong>，沒有未提交修改</li>
+<li><strong>HEAD </strong><strong>指向一個暫存<span> commit (</span></strong><strong>bece882</strong><strong>)</strong></li>
+</ul>
+<p> </p>
+<ul>
+<li>Git 會嘗試套用下一個<span> commit (3cf2e6a)</span></li>
+<li>如果沒有衝突，<span>rebase </span>就會完成</li>
+<li>如果出現衝突，<span>Git </span>會提示你手動解決</li>
+</ul>
+<p> </p>
+<h4><span style="background-color: #ffff00;">查詢端口</span></h4>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">lsof -i :8080#查詢端口</pre>
+<h4><br/><span style="background-color: #ffff00;">強制停止PID進程</span></h4>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">kill -9 2405#強制停止PID進程</pre>
+<p><br/><br/></p>
+<p></p>
+<p></p><br />Git push << <a href='Git push.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
