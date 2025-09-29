@@ -92,7 +92,8 @@
 <p style="padding-left: 30px;"><span>基本描述：在業界&amp;學界使用十分廣泛，因其軟體為買斷式且提供Simulation&amp;Flow Simulation等，同一軟體整合多種分析功能。</span></p>
 <p>Inventor：</p>
 <p style="padding-left: 30px;"><span>實際案例：本次設計連桿在Inventor的優勢僅為教育使用權索取較為容易&amp;操作容易之外並沒有甚麼特別。但因原廠Autodesk公司開發許多軟體，在配合同家產品使用時當然問題會比較少。</span></p>
-<p style="padding-left: 30px;"><span>基本描述：Inventor使用者也不算少數，但因其採租約制，所以沒有Solidworks這麼有名，其教育授權是我目前認為速度快且方便的軟體商之一，所以從Inventor入門也是選擇之一。</span></p><h2>W7</h2>
+<p style="padding-left: 30px;"><span>基本描述：Inventor使用者也不算少數，但因其採租約制，所以沒有Solidworks這麼有名，其教育授權是我目前認為速度快且方便的軟體商之一，所以從Inventor入門也是選擇之一。</span></p>
+<h2>W7</h2>
 <h2>W10</h2>
 <h2>W14</h2>
 <h2>W17</h2>
@@ -103,7 +104,8 @@
 <h3>Cad2025作業倉儲</h3>
 <p><img alt="" height="361" src="/images/Cad2025作業倉儲.png" width="800"/></p>
 <p><img alt="" height="360" src="/images/Cad2025作業倉儲(1).png" width="800"/></p>
-<p></p><h3>組長將成員加入倉儲</h3>
+<p></p>
+<h3>組長將成員加入倉儲</h3>
 <p><img alt="" height="362" src="/images/Cad2025作業倉儲(2).png" width="800"/></p>
 <p><img alt="" height="364" src="/images/Cad2025作業倉儲(3).png" width="800"/></p>
 <p><img alt="" height="369" src="/images/Cad2025作業倉儲(4).png" width="800"/></p>
@@ -115,7 +117,41 @@
 <h3>請組員確認邀請</h3>
 <p>請至申請<span>github</span>的電子郵件內接受邀請</p>
 <p><img alt="" height="1636" src="/images/Cad2025請組員確認邀請(1).jpg" width="800"/></p>
-<p></p><h2>Codespaces</h2>
+<h3>Deploy to GitHub Pages</h3>
+<p><img alt="" height="372" src="/images/Deploy to GitHub Pages(1).png" width="800"/></p>
+<p><img alt="" height="372" src="/images/Deploy to GitHub Pages(2).png" width="800"/></p>
+<p><img alt="" height="372" src="/images/Deploy to GitHub Pages(3).png" width="800"/></p>
+<p><img alt="" height="372" src="/images/Deploy to GitHub Pages(4).png" width="800"/></p>
+<p><span style="color: #000000; background-color: #ff9900;">等待1分鐘左右會出現下圖</span></p>
+<p><br/><img alt="" height="371" src="/images/Deploy to GitHub Pages(5).png" width="800"/></p>
+<h3>建立feature branches</h3>
+<p>在<span>codepaces</span>下執行</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">members=("41323150" "shung0625" "SKYang41323142" "hw-zhe0331")
+
+ 
+
+for member in "${members[@]}"; do
+
+    echo "設定成員 $member 的分支關聯..."
+
+    git branch --set-upstream-to=origin/feature/$member feature/$member
+
+done</pre>
+<p><br/><img alt="" height="796" src="/images/建立feature branches(1).png" width="800"/></p>
+<h3>使用feature branches</h3>
+<p><span style="background-color: #ffff00;">直接選擇分支進行建立codepaces</span></p>
+<p><span style="background-color: #ffff00;"><img alt="" src="/images/使用feature branches(!).png"/></span><img alt="" height="524" src="/images/使用feature branches(1).png" width="800"/></p>
+<p><img alt="" height="375" src="/images/使用feature branches(2).png" width="800"/></p>
+<p>至對應成員分支下建立程式碼空間</p>
+<p><span style="background-color: #ffff00;">此法是在codepaces內的終端機切換分支</span></p>
+<p><img alt="" height="436" src="/images/使用feature branches(3).png" width="800"/></p>
+<p>透過</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">git checkout feature/github name</pre>
+<p>切換<span>codepaces </span>的分支</p>
+<p><img alt="" height="72" src="/images/使用feature branches(4).png" width="800"/></p>
+<p><span style="background-color: #ffff00;"></span></p>
+<h3>拉取請求(pull request)</h3>
+<p><img alt="" height="367" src="/images/拉取請求(pull request)(1).png" width="800"/><img alt="" src="/get_page/%E6%8B%89%E5%8F%96%E8%AB%8B%E6%B1%82(pull%20request)/拉取請求(pull request)(2).png"/></p><h2>Codespaces</h2>
 <h3>啟動動態編輯前</h3>
 <p><span>啟動動態編輯前：</span></p>
 <p>利用<span> init_replit </span>指令取下子模組並安裝所需<span> Python </span>模組</p>

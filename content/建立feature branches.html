@@ -142,14 +142,21 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">啟動動態編輯前 << <a href='啟動動態編輯前.html'>Previous</a> <a href='Git push.html'>Next</a> >> Git push<br /><h1>啟動動態編輯</h1>
-<p><span>啟動動態編輯：</span></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">python main.py&amp; #啟動動態編輯網站
+    <div id="tipue_search_content">Deploy to GitHub Pages << <a href='Deploy to GitHub Pages.html'>Previous</a> <a href='使用feature branches.html'>Next</a> >> 使用feature branches<br /><h1>建立feature branches</h1>
+<p>在<span>codepaces</span>下執行</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">members=("41323150" "shung0625" "SKYang41323142" "hw-zhe0331")
 
-python main2.py&amp; #啟動動態網站</pre>
-<p></p>
-<p></p>
-<br />啟動動態編輯前 << <a href='啟動動態編輯前.html'>Previous</a> <a href='Git push.html'>Next</a> >> Git push</div>
+ 
+
+for member in "${members[@]}"; do
+
+    echo "設定成員 $member 的分支關聯..."
+
+    git branch --set-upstream-to=origin/feature/$member feature/$member
+
+done</pre>
+<p><br/><img alt="" height="796" src="./../images/建立feature branches(1).png" width="800"/></p>
+<br />Deploy to GitHub Pages << <a href='Deploy to GitHub Pages.html'>Previous</a> <a href='使用feature branches.html'>Next</a> >> 使用feature branches</div>
         
     <!-- footer -->
       <div class="container">
